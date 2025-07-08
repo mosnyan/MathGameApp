@@ -2,6 +2,11 @@ using MathGame.Domain;
 
 namespace MathGame.Engine;
 
+/// <summary>
+/// This is the model of the game.
+/// </summary>
+/// <param name="strategy">A GameStrategy object representing the game mode.</param>
+/// <param name="totalRounds">The total number of rounds to play.</param>
 public class GameEngine(GameStrategy strategy, int totalRounds)
 {
     public int CurrentRound { get; private set; }

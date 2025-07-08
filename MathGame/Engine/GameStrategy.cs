@@ -2,6 +2,9 @@ using MathGame.Domain;
 
 namespace MathGame.Engine;
 
+/// <summary>
+/// Abstract class for different game modes.
+/// </summary>
 public abstract class GameStrategy
 {
     private Random _rng = new Random();

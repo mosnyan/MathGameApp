@@ -1,5 +1,8 @@
 namespace MathGame.Engine;
 
+/// <summary>
+/// Possible game types.
+/// </summary>
 public enum GameType
 {
     None,
@@ -9,6 +12,9 @@ public enum GameType
     Division
 }
 
+/// <summary>
+/// Validation class for the above enum.
+/// </summary>
 class GameTypeFactory
 {
     public static GameType Create(int number)

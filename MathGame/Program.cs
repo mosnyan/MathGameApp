@@ -1,5 +1,8 @@
 ﻿namespace MathGame;
 
+/// <summary>
+/// Entry point for the app.
+/// </summary>
 class Program
 {
     public static void Main(string[] args)

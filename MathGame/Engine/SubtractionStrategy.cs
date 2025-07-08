@@ -2,6 +2,10 @@ namespace MathGame.Engine;
 
 using MathGame.Domain;
 
+/// <summary>
+/// Subtraction game mode.
+/// 
+/// </summary>
 public class SubtractionStrategy : GameStrategy
 {
     internal SubtractionStrategy(Difficulty difficulty)

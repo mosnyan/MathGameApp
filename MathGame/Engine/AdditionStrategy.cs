@@ -2,6 +2,9 @@ using MathGame.Domain;
 
 namespace MathGame.Engine;
 
+/// <summary>
+/// Addition game mode.
+/// </summary>
 public class AdditionStrategy : GameStrategy
 {
     internal AdditionStrategy(Difficulty difficulty)

@@ -4,6 +4,9 @@ namespace MathGame;
 
 using MathGame.Engine;
 
+/// <summary>
+/// The View classes manages the interaction with the player through the console.
+/// </summary>
 public class View
 {
     public void ShowHeader()

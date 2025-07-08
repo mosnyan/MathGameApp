@@ -2,6 +2,9 @@ namespace MathGame.Engine;
 
 using MathGame.Domain;
 
+/// <summary>
+/// Division game mode.
+/// </summary>
 public class DivisionStrategy : GameStrategy
 {
     internal DivisionStrategy(Difficulty difficulty)
@@ -27,6 +30,7 @@ public class DivisionStrategy : GameStrategy
     
     public override ArithmeticExpression GenerateExpression()
     {
+        // Avoids divisions by zero as well as non-integer division results.
         var divisor = GetRandomOperand();
         while (divisor == 0)
         {

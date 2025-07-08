@@ -2,6 +2,9 @@ namespace MathGame;
 
 using MathGame.Engine;
 
+/// <summary>
+/// The MathGameApp is the game's controller/orchestrator.
+/// </summary>
 public class MathGameApp
 {
     private View _view;

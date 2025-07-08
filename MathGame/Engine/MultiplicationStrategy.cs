@@ -2,6 +2,9 @@ namespace MathGame.Engine;
 
 using MathGame.Domain;
 
+/// <summary>
+/// Multiplication game mode.
+/// </summary>
 public class MultiplicationStrategy : GameStrategy
 {
     internal MultiplicationStrategy(Difficulty difficulty)
