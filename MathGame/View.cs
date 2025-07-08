@@ -8,7 +8,7 @@ public class View
 {
     public void ShowHeader()
     {
-        Console.WriteLine("<><><> Overengineered CLI Math Game <><><><><><><><><><><><><><><><><><>");
+        Console.WriteLine("<><><> CLI Math Game <><><><><><><><><><><><><><><><><><><><><><><><><>");
         Console.WriteLine("\nThis game challenges you to find the answer to arithmetic operations.");
     }
 
