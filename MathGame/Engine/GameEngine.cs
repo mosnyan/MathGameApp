@@ -1,0 +1,29 @@
+using MathGame.Domain;
+
+namespace MathGame.Engine;
+
+public class GameEngine(GameStrategy strategy, int totalRounds)
+{
+    public int CurrentRound { get; private set; }
+    public int RightAnswers { get; private set; }
+    
+    public ArithmeticExpression GenerateExpression()
+    {
+        CurrentRound++;
+        return strategy.GenerateExpression();
+    }
+
+    public bool EvaluateGuess(ArithmeticExpression expr, int guess)
+    {
+        if (expr.Result == guess)
+        {
+            RightAnswers++;
+            return true;
+        }
+
+        return false;
+    }
+
+    public bool GameOver => CurrentRound == totalRounds;
+    public double Score => Double.Round(RightAnswers / CurrentRound * 100.0, 2);
+}

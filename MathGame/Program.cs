@@ -1,0 +1,12 @@
+﻿namespace MathGame;
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+        View view = new();
+        MathGameApp app = new(view);
+        app.SetupGame();
+        app.PlayGame();
+    }
+}
